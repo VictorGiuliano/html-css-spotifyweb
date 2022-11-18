@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    max-width: 1800px;
+    border: 2px dashed black;
+    height: 90vh;
+}
+.navbar{
+    background-color: red;
+    width: 30%;
+    min-height: 400px;
+}
+.base{
+    background-color: green;
+    width: 70%;
+    border: 3px solid blue;
+}
+.header-base{
+    background-color: violet;
+    height: 10vh;
+}
+footer{
+    background-color: black;
+    height: 10vh;
+}
