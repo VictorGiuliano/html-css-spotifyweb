@@ -43,15 +43,15 @@ body{
     right: 1.5rem;
 }
 .navbar-base{
-    background-color: blueviolet;
     margin-top:50px;
-    padding:1em;
+    padding:0.6em;
 }
 .navbar-base ul{
     list-style-type: none;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 .navbar-base li{
     margin:0 10px;
@@ -60,6 +60,7 @@ body{
     text-decoration: none;
     color: darkgray;
     font-weight: bold;
+    font-size: small;
 }
 .row{
     gap:50px;
@@ -71,10 +72,13 @@ body{
     gap: 50px;
 }
 .card{
+    display: flex;
+    flex-direction: column;
     width: 120px;
     height: 120px;
     border: 1px black solid;
-    
+    align-items: center;
+    justify-content: end;
     
 }
 footer{
@@ -84,6 +88,13 @@ footer{
 }
 
 @media screen and (max-width:980px){ 
+    .container{
+        min-width: 70%;
+    }
+    .navbar-base ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
     .row{
         flex-wrap: wrap;
     }
@@ -96,6 +107,10 @@ footer{
     .row{
         flex-direction: column;
     }
+    .navbar-base ul{
+        width: 100%;
+    }
+
 }
 
 
