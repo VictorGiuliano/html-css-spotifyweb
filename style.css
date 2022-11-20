@@ -26,6 +26,7 @@ body{
     width: 85%;
     border: 3px solid blue;
     overflow-y:auto;
+    color: white;
 }
 .header-base{
     background-color: rgba(0,0,0,0.4);
@@ -55,9 +56,46 @@ body{
 .navbar-base li{
     margin:0 10px;
 }
-
+.navbar-base a{
+    text-decoration: none;
+    color: darkgray;
+    font-weight: bold;
+}
+.row{
+    gap:50px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.column{
+    display: flex;
+    gap: 50px;
+}
+.card{
+    width: 120px;
+    height: 120px;
+    border: 1px black solid;
+    
+    
+}
 footer{
     background-color: black;
     min-height: 10vh;
     position: sticky;
 }
+
+@media screen and (max-width:980px){ 
+    .row{
+        flex-wrap: wrap;
+    }
+    .column{
+        display:flex;
+    }
+} 
+
+@media screen and (max-width:770px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+
