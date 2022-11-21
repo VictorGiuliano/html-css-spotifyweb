@@ -8,30 +8,29 @@ body{
 }
 .container{
     display: flex;
-    align-self: center;
+    align-self: stretch;
     justify-content: space-between;
     position: relative;
-    max-width: 1800px;
     border: 2px dashed black;
-    height: 90vh;
+    height: calc( 100vh - 100px);
 }
 .navbar{
     background-color: red;
-    width: 15%;
-    min-height: 260px;
+    flex: 0 0 250px;
 }
 /* Main */
 .base{
     background-color: green;
-    width: 85%;
+    flex: 1 1 auto;
     border: 3px solid blue;
     overflow-y:auto;
+    overflow-x: hidden;
     color: white;
 }
 .header-base{
     background-color: rgba(0,0,0,0.4);
     height: 50px;
-    width: 85%;
+    width: calc( 100% - 250px );
     position: fixed;
     right: 0;
     top: 0;
@@ -83,7 +82,7 @@ body{
 }
 footer{
     background-color: black;
-    min-height: 10vh;
+    height: 100px;
     position: sticky;
 }
 
@@ -113,4 +112,11 @@ footer{
 
 }
 
-
+@media screen and (max-width:576px){
+.navbar{
+    flex-basis: 50px;
+}
+.header-base{
+    width: calc( 100% - 50px );
+}
+}
