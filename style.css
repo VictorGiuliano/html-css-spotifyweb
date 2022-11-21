@@ -25,6 +25,12 @@ body{
 .navbar-logo img{
     width: 60%;
 }
+.presente{
+    visibility: visible;
+}
+.hide{
+    display: none;
+}
 .img-setting{
     width: 18px;
     height: 18px;
@@ -33,14 +39,31 @@ body{
 .navbar-menu{
     padding:5px 0;
 }
+.navbar-menu li{
+    padding:5px 0;
+}
 .navbar-body{
     display: flex;
     flex-direction: column;
     height: 80%;
     justify-content: space-between;
 }
+h4{
+    margin:10px 0;
+    font-size: 15px;
+    color: white;
+}
 .navbar-playlist ul, .navbar-header ul{
     list-style-type: none;
+}
+.fa-square-plus{
+    font-size: 30px;
+}
+#crea{
+    font-size: 15px;
+}
+.navbar-playlist li{
+    padding:5px 0;
 }
 .navbar-install{
     display: flex;
@@ -170,5 +193,31 @@ footer{
 }
 .header-base{
     width: calc( 100% - 50px );
+}
+.navbar-logo{
+    height: 18.79px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+}
+.hide{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.presente{
+    display: none;
+}
+span{
+    display:none;
+}
+.navbar-playlist{
+    display: none;
+}
+.divisore{
+    display: none;
+}
+.navbar-body{
+    justify-content: flex-end;
 }
 }
