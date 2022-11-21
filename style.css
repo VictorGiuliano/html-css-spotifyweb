@@ -83,9 +83,9 @@ h4{
 
 /* Main */
 .base{
-    background-color: green;
+    background-color: rgba(20,25,34,255);
     flex: 1 1 auto;
-    border: 3px solid blue;
+
     overflow-y:auto;
     overflow-x: hidden;
     color: white;
@@ -130,30 +130,50 @@ h4{
     gap:20px;
     display: flex;
     flex-wrap: nowrap;
+    padding: 0 20px;
 }
 .column{
     display: flex;
     gap: 20px;
 }
+.title{
+    font-size: 25px;
+    padding:30px 0 25px 20px;
+    font-weight: bolder;
+}
+.subtitle{
+    font-size: 10px;
+    padding:15px 0 20px 20px;
+    font-weight: bolder;
+}
 .card{
     display: flex;
     flex-direction: column;
     width: 150px;
-    height: 180px;
-    border: 1px black solid;
     align-items: center;
-    justify-content: end;
+    justify-content: start;
     
 }
 /* Into Cards */
 .square{
     width: 140px;
     display: flex;
-    flex-wrap: wrap;
-    border: red 1px solid;
 }
 .square img{
     width: 100%;
+}
+.titolo{
+    text-align: center;
+    padding: 5px 0;
+    font-size: 15px;
+    font-weight: bolder;
+    height: auto;
+    max-height: 7rem;
+}
+.autore{
+    text-align: center;
+    color: darkgrey;
+    font-size: 11px;
 }
 footer{
     background-color: black;
