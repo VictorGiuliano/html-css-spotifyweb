@@ -152,7 +152,6 @@ span{
 }
 
 .row{
-    width: 90rem;
     gap:20px;
     display: flex;
     flex-wrap: nowrap;
