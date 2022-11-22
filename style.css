@@ -14,6 +14,9 @@ body{
     border: 2px dashed black;
     height: calc( 100vh - 100px);
 }
+.spesso{
+    font-weight: 600;
+}
 /* Navbar */
 .navbar{
     background-color: black;
@@ -53,6 +56,7 @@ h4{
     font-size: 15px;
     color: white;
 }
+
 .navbar-playlist{
     height: calc(100% - 80px);
     overflow-y: auto;
@@ -186,10 +190,84 @@ h4{
     color: darkgrey;
     font-size: 11px;
 }
+/* Regole Footer */
 footer{
+    color: white;
     background-color: black;
     height: 100px;
     position: sticky;
+
+    display: flex;
+    justify-content: space-between;
+}
+.left-bar{
+    text-align: left;
+    display: flex;
+    flex-basis: calc(100% / 3);
+    border: 1px dashed orange;
+    padding:25px 10px;
+    justify-content: space-between;
+}
+.quadratino{
+    width: 50px;
+    display: flex;
+}
+.quadratino img{
+    max-height: 100%;
+}
+.titolo-now{
+    padding:10px 0 0 8px;
+}
+.icon-left{
+    display: flex;
+    align-items: center;
+    color: grey;
+}
+.icon-left .fa-heart, .fa-folder{
+    padding:0 5px;
+}
+.autore-now{
+    padding-left: 8px;
+    color: darkgrey;
+}
+.center-bar{
+    width: 800px;
+    border: 1px dashed orange;
+}
+.right-bar{
+    flex-basis: calc(100% / 3);
+    text-align: left;
+    display: flex;
+    padding: 25px 0;
+    justify-content: space-between;
+    border: 1px dashed orange;
+}
+.icon-right{
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-soundbar{
+    padding:0 25px;
+    align-self: center;
+}
+.soundbar{
+    position: relative;
+    height: 5px;
+    width: 11rem;
+    background-color: darkgray;
+    border-radius: 10px;
+}
+.soundbar .value{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    width: 30%;
+    max-width: 100%;
+    background-color: white;
 }
 
 @media screen and (max-width:980px){ 

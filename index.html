@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=PT+Sans&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -30,7 +30,7 @@
             </div>
             <div class="navbar-body">
                 <div class="navbar-playlist">
-                    <h4>PLAYLIST</h4>
+                    <h4 class="spesso">PLAYLIST</h4>
                     <i class="fa-solid fa-square-plus"></i><span id="crea"> Crea Playlist</span>
                     <ul>
                         <li>Nome Playlist</li>
@@ -55,7 +55,7 @@
                 <div class="navbar-profile">
                     <div class="navbar-last">
                         <img class="img-setting" src="img/profile.svg" alt="User">
-                        <span id="utente">Victor Giuliano</span>
+                        <span class="spesso">Victor Giuliano</span>
                     </div>
                 </div>
                 </div>
@@ -75,14 +75,14 @@
                     <li><a href="#">SCOPRI</a></li>
                 </ul>
             </div>
-            <h3 class="title">Recently played</h3>
+            <h3 class="title spesso">Recently played</h3>
             <div class="row">
                 <div class="column">
                     <div class="card">
                         <div class="square">
                         <img src="img/metal_lifting.jpg" alt="metal-playlist">
                         </div>
-                        <p class="titolo">Heavy Metal</p>
+                        <p class="titolo spesso">Heavy Metal</p>
                         <p class="autore">Subtitle</p>
                     </div>
 
@@ -90,7 +90,7 @@
                         <div class="square">
                          <img src="img/stranger.jpeg" alt="Ost">
                         </div>
-                        <p class="titolo">Stranger Things Vol.1 (a Netflix Original Series Soundtrack)</p>
+                        <p class="titolo spesso">Stranger Things Vol.1 (a Netflix Original Series Soundtrack)</p>
                         <p class="autore">Kyle Dixon & Michael Stein</p>
                     </div>
                 </div>
@@ -99,14 +99,14 @@
                         <div class="square">
                             <img src="img/aquietplace.jpeg" alt="ostfilm">
                         </div>
-                        <p class="titolo">A quiet place</p>
+                        <p class="titolo spesso">A quiet place</p>
                         <p class="autore">Subtitle</p>
                     </div>
                     <div class="card">
                         <div class="square">
                             <img src="img/split.jpeg" alt="ostfilm">
                         </div>
-                        <p class="titolo">Split</p>
+                        <p class="titolo spesso">Split</p>
                         <p class="autore">Subtitle</p>
                     </div>
                 </div>
@@ -115,19 +115,19 @@
                         <div class="square">
                             <img src="img/cure.jpeg" alt="ostfilm">
                         </div>
-                        <p class="titolo">A cure for wellness</p>
+                        <p class="titolo spesso">A cure for wellness</p>
                         <p class="autore">Subtitle</p>
                     </div>
                     <div class="card">
                         <div class="square">
                             <img src="img/sinister.jpeg" alt=" ostfilm">
                         </div>
-                        <p class="titolo">Sinister</p>
+                        <p class="titolo spesso">Sinister</p>
                         <p class="autore">Subtitle</p>
                     </div>
                 </div>
             </div>
-            <h3 class="title">Creato per Victor Giuliano</h3>
+            <h3 class="title spesso">Creato per Victor Giuliano</h3>
             <h6 class="subtitle">Più ascolti, più accurati saranno i suggerimenti.</h6>
             <div class="row">
                 <div class="column">
@@ -135,38 +135,63 @@
                         <div class="square">
                             <img src="img/radar.jpeg" alt="i tuoi gusti">
                         </div>
-                    <p class="titolo">Release Radar</p>
+                    <p class="titolo spesso">Release Radar</p>
                     </div>
                     <div class="card">
                         <div class="square">
                             <img src="img/mixdaily.jpeg" alt="suggeriti">
                         </div>
-                    <p class="titolo">Daily Mix 1</p>   
+                    <p class="titolo spesso">Daily Mix 1</p>   
                     </div>
                 </div>
             </div>
-            <h3 class="title">Artisti più popolari</h3>
+            <h3 class="title spesso">Artisti più popolari</h3>
             <h6 class="subtitle">Più ascolti, più accurati saranno i suggerimenti.</h6>
             <div class="row">
                 <div class="column">
                     <div class="card">
                         <div class="square">
-                            <img src="img/radar.jpeg">
+                            <img src="img/radar.jpeg" alt="Artista">
                         </div>
-                    <p class="titolo">Release Radar</p>
+                    <p class="titolo spesso">Release Radar</p>
                     </div>
                     <div class="card">
                         <div class="square">
-                            <img src="img/mixdaily.jpeg">
+                            <img src="img/mixdaily.jpeg" alt="Artista">
                         </div>
-                    <p class="titolo">Daily Mix 1</p>   
+                    <p class="titolo spesso">Daily Mix 1</p>   
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <footer>
-
+        <div class="left-bar">
+            <div class="quadratino">
+                <img src="img/sinister.jpeg" alt="now">
+                    <div class="canzone">
+                        <h5 class="titolo-now">Sinister</h5>
+                        <h6 class="autore-now">BranoNome</h6>
+                    </div>
+            </div>
+            <div class="icon-left">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-folder"></i>
+            </div>
+        </div>
+        <div class="center-bar"><span>a</span></div>
+        <div class="right-bar">
+            <div class="icon-right">
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-display"></i>
+                <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="container-soundbar">
+                <div class="soundbar">
+                    <div class="value"></div>
+                </div>
+            </div>
+            </div>
     </footer>
 </body>
 
