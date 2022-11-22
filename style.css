@@ -17,6 +17,14 @@ body{
 .spesso{
     font-weight: 600;
 }
+h4{
+    margin:10px 0;
+    font-size: 15px;
+    color: white;
+}
+span{
+    font-size: small;
+}
 /* Navbar */
 .navbar{
     background-color: black;
@@ -50,11 +58,6 @@ body{
     flex-direction: column;
     height: calc(100vh - 60%);
     justify-content: space-between;
-}
-h4{
-    margin:10px 0;
-    font-size: 15px;
-    color: white;
 }
 
 .navbar-playlist{
@@ -200,6 +203,7 @@ footer{
     display: flex;
     justify-content: space-between;
 }
+/* Inizio Footer */
 .left-bar{
     text-align: left;
     display: flex;
@@ -230,12 +234,51 @@ footer{
     padding-left: 8px;
     color: darkgrey;
 }
+/* Parte centrale del Footer */
 .center-bar{
     width: 800px;
-    border: 1px dashed orange;
+    padding: 10px 0 0 20px;
+    display: flex;
+    flex-direction: column;
 }
+.container-icon{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.icon-center{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+.container-bar{
+    display: flex;
+    justify-content: space-around;
+}
+.riproduction{
+    align-self: center;
+    position: relative;
+    
+    height: 5px;
+    width: 20rem;
+    background-color: darkgray;
+    border-radius: 10px;
+}
+.riproduction .value{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    width: 30%;
+    max-width: 100%;
+    background-color: white;
+}
+/* Finale del Footer */
 .right-bar{
     flex-basis: calc(100% / 3);
+    min-width: 70px;
     text-align: left;
     display: flex;
     padding: 25px 0;
@@ -250,6 +293,7 @@ footer{
 }
 .container-soundbar{
     padding:0 25px;
+    width: 100%;
     align-self: center;
 }
 .soundbar{
@@ -325,5 +369,11 @@ span{
 }
 .navbar-body{
     justify-content: flex-end;
+}
+.left-bar{
+    visibility: hidden;
+}
+.right-bar{
+    visibility: hidden;
 }
 }
